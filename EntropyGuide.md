@@ -18,14 +18,14 @@
 <img src="pictures/Chessboard.PNG" width="30%" align="right">
 This is how the standard setup of a chess game would translate:
 
-8. bR,bK,bB,bQ,bK,bB,bK,bR
-7. bP,bP,bP,bP,bP,bP,bP,bP
-6. E,E,E,E,E,E,E,E
-5. E,E,E,E,E,E,E,E
-4. E,E,E,E,E,E,E,E
-3. E,E,E,E,E,E,E,E
-2. wP,wP,wP,wP,wP,wP,wP,wP
-1. wR,wK,wB,wQ,wK,wB,wK,wR
+- 8. bR,bK,bB,bQ,bK,bB,bK,bR
+- 7. bP,bP,bP,bP,bP,bP,bP,bP
+- 6. E,E,E,E,E,E,E,E
+- 5. E,E,E,E,E,E,E,E
+- 4. E,E,E,E,E,E,E,E
+- 3. E,E,E,E,E,E,E,E
+- 2. wP,wP,wP,wP,wP,wP,wP,wP
+- 1. wR,wK,wB,wQ,wK,wB,wK,wR
 
 Turning that into a single string the result would look like this:
 
