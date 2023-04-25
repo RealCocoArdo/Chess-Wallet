@@ -19,18 +19,18 @@
 This is how the standard setup of a chess game would translate:<br><br>
 
 
-- 8 = bR,bK,bB,bQ,bK,bB,bK,bR
-- 7 = bP,bP,bP,bP,bP,bP,bP,bP
-- 6 = E,E,E,E,E,E,E,E
-- 5 = E,E,E,E,E,E,E,E
-- 4 = E,E,E,E,E,E,E,E
-- 3 = E,E,E,E,E,E,E,E
-- 2 = wP,wP,wP,wP,wP,wP,wP,wP
-- 1 = wR,wK,wB,wQ,wK,wB,wK,wR
+- Line 8 = `bR,bK,bB,bQ,bK,bB,bK,bR`
+- Line 7 = `bP,bP,bP,bP,bP,bP,bP,bP`
+- Line 6 = `E,E,E,E,E,E,E,E`
+- Line 5 = `E,E,E,E,E,E,E,E`
+- Line 4 = `E,E,E,E,E,E,E,E`
+- Line 3 = `E,E,E,E,E,E,E,E`
+- Line 2 = `wP,wP,wP,wP,wP,wP,wP,wP`
+- Line 1 = `wR,wK,wB,wQ,wK,wB,wK,wR`
 
 Turning that into a single string the result would look like this:
 
-'8.bR,bK,bB,bQ,bK,bB,bK,bR,7.bP,bP,bP,bP,bP,bP,bP,bP,6.E,E,E,E,E,E,E,E,5.E,E,E,E,E,E,E,E,4.E,E,E,E,E,E,E,E,3.E,E,E,E,E,E,E,E,2.wP,wP,wP,wP,wP,wP,wP,wP,1.wR,wK,wB,wQ,wK,wB,wK,wR'
+`8.bR,bK,bB,bQ,bK,bB,bK,bR,7.bP,bP,bP,bP,bP,bP,bP,bP,6.E,E,E,E,E,E,E,E,5.E,E,E,E,E,E,E,E,4.E,E,E,E,E,E,E,E,3.E,E,E,E,E,E,E,E,2.wP,wP,wP,wP,wP,wP,wP,wP,1.wR,wK,wB,wQ,wK,wB,wK,wR`
 <br>
 
 - There are no free spaces inbetween, just a comma ,
