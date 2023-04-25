@@ -20,7 +20,7 @@ This [entropy guide](EntropyGuide.md) instructs you on what to input.
     - Check add to PATH in the installation
 2. Download this repository and unzip it
 
-</details><br>
+</details>
 
 ## Start the program
 <details>
