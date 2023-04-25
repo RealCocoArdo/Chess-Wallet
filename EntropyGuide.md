@@ -16,7 +16,7 @@
 ## Example
 
 <img src="pictures/Chessboard.PNG" width="30%" align="right">
-This is how the standard setup of a chess game would translate:
+This is how the standard setup of a chess game would translate:<br>
 
 - 8 = bR,bK,bB,bQ,bK,bB,bK,bR
 - 7 = bP,bP,bP,bP,bP,bP,bP,bP
