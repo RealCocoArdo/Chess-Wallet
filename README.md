@@ -1,4 +1,6 @@
 # Chess Wallet
+
+<p align="center"><img src="pictures/Banner.PNG"></img><br><a href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></img></a></p>
 A brain wallet that is rememberable.
 
 Instead of remembering 24 words in a right order you have instead to remember the setup of a chessboard.
@@ -9,7 +11,7 @@ A chessboard has 8 by 8 squares. Which equals 64 squares in totall.
 There are 13 diffrent states(pieces being on them) one square can be in, including empty.
 So there are 64^13 possible combinations.
 
-This [entropy guide](EntropyGuide.md) instructs you on what to input.
+This [entropy guide](Libraries/EntropyGuide.md) instructs you on what to input.
 
 ## Disclaimer!
 <details>
@@ -35,7 +37,7 @@ This [entropy guide](EntropyGuide.md) instructs you on what to input.
 <summary>see more</summary>
 
 1. Navigate to the Chess-Wallet folder and open it
-2. Open the `install-libraries-windows` or `install-libraries-linux` file to dowload the libraries
+2. Open in the folder Libraries the `install-libraries-windows` or `install-libraries-linux` file to dowload the libraries
 3. Disconnect your Wifi
 4. Open the `start-on-windows` or `start-on-linux` file to start the program.
 </details>
