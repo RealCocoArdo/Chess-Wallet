@@ -19,22 +19,22 @@
 
 ## Example
 
-<img src="pictures/Chessboard.PNG" width="30%" align="right">
+<img src="../pictures/Chessboard.PNG" width="30%" align="right">
 This is how the standard setup of a chess game would translate:<br><br>
 
 
-- Line 8 = `bR,bK,bB,bQ,bK,bB,bK,bR`
+- Line 8 = `bR,bN,bB,bQ,bK,bB,bN,bR`
 - Line 7 = `bP,bP,bP,bP,bP,bP,bP,bP`
 - Line 6 = `E,E,E,E,E,E,E,E`
 - Line 5 = `E,E,E,E,E,E,E,E`
 - Line 4 = `E,E,E,E,E,E,E,E`
 - Line 3 = `E,E,E,E,E,E,E,E`
 - Line 2 = `wP,wP,wP,wP,wP,wP,wP,wP`
-- Line 1 = `wR,wK,wB,wQ,wK,wB,wK,wR`
+- Line 1 = `wR,wN,wB,wQ,wK,wB,wN,wR`
 
 Turning that into a single string the result would look like this:
 
-`8.bR,bK,bB,bQ,bK,bB,bK,bR,7.bP,bP,bP,bP,bP,bP,bP,bP,6.E,E,E,E,E,E,E,E,5.E,E,E,E,E,E,E,E,4.E,E,E,E,E,E,E,E,3.E,E,E,E,E,E,E,E,2.wP,wP,wP,wP,wP,wP,wP,wP,1.wR,wK,wB,wQ,wK,wB,wK,wR`
+`8.bR,bN,bB,bQ,bK,bB,bN,bR,7.bP,bP,bP,bP,bP,bP,bP,bP,6.E,E,E,E,E,E,E,E,5.E,E,E,E,E,E,E,E,4.E,E,E,E,E,E,E,E,3.E,E,E,E,E,E,E,E,2.wP,wP,wP,wP,wP,wP,wP,wP,1.wR,wN,wB,wQ,wK,wB,wN,wR`
 <br>
 
 - There are no free spaces inbetween, just a comma ,
@@ -46,10 +46,10 @@ This string is your chessboard setup.
 <details>
 <summary>see more</summary>
 
-1. Extenting your chessboard setup with custom text/numbers(anything) is highly recommended to increase your entrophy.
+1. Extenting your chessboard setup with custom text/numbers(anything) is highly recommended to increase your entropy.
     - To provide some instructions, which make it less unlikley you mess up a recovery, please enter your extention as follows:
     - YourBoard+YourExtention
     - Use the `+` for inbetween and don't have any empty space in your extention.
-2. Don't use the default chessboard setup or common chess-openings as your entrophy. Its very likley they get brute forced.
+2. Don't use the default chessboard setup or common chess-openings as your entropy. Its very likley they get brute forced.
 3. You are not limited to the rules of chess. Have 20 Kings on the board. Or style your board in any way you like it to.
 </details>
