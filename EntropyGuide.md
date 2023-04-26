@@ -1,4 +1,7 @@
 ## Notation of the diffrent states
+<details>
+<summary>see more</summary>
+
 - E = Empty
 - bK = black king
 - wK = white king
@@ -12,6 +15,7 @@
 - wN = white knight
 - bB = black bishop
 - wB = white bishop
+</details>
 
 ## Example
 
@@ -37,3 +41,15 @@ Turning that into a single string the result would look like this:
 - After every line-number is a dot .
 
 This string is your chessboard setup.
+
+## Advices
+<details>
+<summary>see more</summary>
+
+1. Extenting your chessboard setup with custom text/numbers(anything) is highly recommended to increase your entrophy.
+    - To provide some instructions, which make it less unlikley you mess up a recovery, please enter your extention as follows:
+    - YourBoard+YourExtention
+    - Use the `+` for inbetween and don't have any empty space in your extention.
+2. Don't use the default chessboard setup or common chess-openings as your entrophy. Its very likley they get brute forced.
+3. You are not limited to the rules of chess. Have 20 Kings on the board. Or style your board in any way you like it to.
+</details>
