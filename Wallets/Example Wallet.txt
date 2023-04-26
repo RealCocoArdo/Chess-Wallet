@@ -1,4 +1,13 @@
+Chess-Wallet - Bitcoin Wallet Backup 
+ 
+ 
+Your chessboard setup/ your entropy was: 
+ 
+Example Wallet
+ 
+ 
 Your nnemonic words are: 
+ 
 maple
 afraid
 forget
@@ -22,6 +31,4 @@ swap
 about
 despair
 option
-iron
-
-Your Bitcoin Address is: 1DwUxgdoSUa8Jh5XQiuQg58NTqrhwAukeR
+hurry
