@@ -1,30 +1,20 @@
 from bitcoin import *
-import bitcoin
-import requests
+import binascii
 from colorama import Fore, Back, Style
 from colorama import just_fix_windows_console
 just_fix_windows_console()
 
+# Starting
 print(' ')
 print(f'{Fore.GREEN}Starting Chess-Wallet..{Style.RESET_ALL}')
 print(' ')
 
+# Get a entropy of the user & get a sha256 of it 
 chessboard = input("Enter your chess board setup: ")
 print(f'{Fore.YELLOW}Your setup:{Style.RESET_ALL}',chessboard)
 print(' ')
 private_key = sha256(chessboard)
 print(f'{Fore.LIGHTCYAN_EX}Generated private key (in hex):{Style.RESET_ALL}',private_key)
-
-
-decoded_private_key = bitcoin.decode_privkey(private_key, 'hex')
-valid_private_key = 0 < decoded_private_key < bitcoin.N
-
-wif_encoded_private_key = bitcoin.encode_privkey(decoded_private_key, 'wif')
-public_key = bitcoin.fast_multiply(bitcoin.G, decoded_private_key)
-
-print(f'{Fore.LIGHTCYAN_EX}Bitcoin Address: {Style.RESET_ALL}' + bitcoin.pubkey_to_address(public_key))
-print(f'{Fore.LIGHTCYAN_EX}Private Key is (Wif): {Style.RESET_ALL}' + wif_encoded_private_key)
-
 
 # Turn the private-key into binary format
 print(' ')
@@ -36,7 +26,10 @@ print(f'{Fore.LIGHTCYAN_EX}Binary seed: {Style.RESET_ALL}'+binaryseed)
 print(' ')
 
 # Get checksum of the binary to be able to get the 24th word
-addedcheck = sha256(binaryseed)
+from hashlib import sha256
+hexstr = "{0:0>4X}".format(int(binaryseed,2)).zfill(int(len(binaryseed)/4))
+data = binascii.a2b_hex(hexstr)
+addedcheck = sha256(data).hexdigest()
 print(f'{Fore.LIGHTCYAN_EX}Checksum of binary(in hex): {Style.RESET_ALL}' + addedcheck)
 checksum_short = addedcheck[:2]
 print(f'{Fore.LIGHTCYAN_EX}First 2 characters: {Style.RESET_ALL}' + checksum_short)
@@ -55,7 +48,7 @@ print(' ')
 
 # Turn the 11 digit long decimals, which are 1 long string rn, into decimal format
 decimal_list = [int(seed_with_checksum[i:i+11], 2) for i in range(0,len(seed_with_checksum),11)]
-print(f'{Fore.LIGHTCYAN_EX}0-Indexed numbers of your seed words: {Style.RESET_ALL}') 
+print(f'{Fore.LIGHTCYAN_EX}0-Indexed numbers of your bip39 seed words: {Style.RESET_ALL}') 
 print(decimal_list)
 
 
@@ -2125,10 +2118,10 @@ var1 = input('Do you want to store your 24 words? (Y/N): ')
 if var1 == 'Y' or var1 == 'y':
     print(' ')
     fp = open('Wallets/' + chessboard + '.txt', 'w')
-    fp.write('Your nnemonic words are: \n')
+    fp.write('Chess-Wallet - Bitcoin Wallet Backup \n \n \n')
+    fp.write('Your chessboard setup/ your entropy was: \n \n' + chessboard + '\n \n \n')
+    fp.write('Your nnemonic words are: \n \n')
     fp.writelines([str(i)+'\n' for i in firstwords_list])
-    fp.write('\n')
-    fp.write('Your Bitcoin Address is: ' + bitcoin.pubkey_to_address(public_key))
     fp.close()
     print(f'{Fore.GREEN}Your seed got succesfully stored in the Wallets folder{Style.RESET_ALL}')
 else:
