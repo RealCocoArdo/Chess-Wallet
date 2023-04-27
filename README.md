@@ -11,7 +11,7 @@ A chessboard has 8 by 8 squares. Which equals 64 squares in totall.
 There are 13 diffrent states(pieces being on them) one square can be in, including empty.
 So there are 64^13 possible combinations.
 
-This [entropy guide](Libraries/EntropyGuide.md) instructs you on what to input.
+This [entropy guide](Libraries/EntropyGuide.md) instructs you on what to input. <br>However the Chess-Wallet can be used to input any entropy.
 
 ## Disclaimer!
 <details>
@@ -26,7 +26,7 @@ This [entropy guide](Libraries/EntropyGuide.md) instructs you on what to input.
 <details>
 <summary>see more</summary>
 
-1. Install the latest version of Python3 [here](python.org).
+1. Install the latest version of Python3 [here](https://python.org/downloads/).
     - Check add to PATH in the installation
 2. [Download](https://github.com/RealCocoArdo/Chess-Wallet/archive/refs/heads/main.zip) this repository and unzip it. Or clone it.
 
@@ -37,7 +37,7 @@ This [entropy guide](Libraries/EntropyGuide.md) instructs you on what to input.
 <summary>see more</summary>
 
 1. Navigate to the Chess-Wallet folder and open it
-2. Open in the folder Libraries the `install-libraries-windows` or `install-libraries-linux` file to dowload the libraries
+2. Open in the folder Libraries the `install-libraries-windows` or bash the `install-libraries-linux` file to dowload the libraries. You only need to do this once.
 3. Disconnect your Wifi
-4. Open the `start-on-windows` or `start-on-linux` file to start the program.
+4. Open the `start-on-windows` or bash the `start-on-linux` file to start the program.
 </details>
