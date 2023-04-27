@@ -22,15 +22,15 @@
 <img src="../pictures/Chessboard.PNG" width="30%" align="right">
 This is how the standard setup of a chess game would translate:<br><br>
 
-
-- Line 8 = `bR,bN,bB,bQ,bK,bB,bN,bR`
-- Line 7 = `bP,bP,bP,bP,bP,bP,bP,bP`
-- Line 6 = `E,E,E,E,E,E,E,E`
-- Line 5 = `E,E,E,E,E,E,E,E`
-- Line 4 = `E,E,E,E,E,E,E,E`
-- Line 3 = `E,E,E,E,E,E,E,E`
-- Line 2 = `wP,wP,wP,wP,wP,wP,wP,wP`
-- Line 1 = `wR,wN,wB,wQ,wK,wB,wN,wR`
+Line 8: | bR | bN | bB | bQ | bK | bB | bK | bR |
+--------|----|----|----|----|----|----|----|----|
+Line 7: | bP | bP | bP | bP | bP | bP | bP | bP |
+Line 6: | E  | E  | E  | E  | E  | E  | E  | E  |
+Line 5: | E  | E  | E  | E  | E  | E  | E  | E  |
+Line 4: | E  | E  | E  | E  | E  | E  | E  | E  |
+Line 3: | E  | E  | E  | E  | E  | E  | E  | E  |
+Line 2: | wP | wP | wP | wP | wP | wP | wP | wP |
+Line 1: | wR | wN | wB | wQ | wK | wB | wK | wR |
 
 Turning that into a single string the result would look like this:
 
