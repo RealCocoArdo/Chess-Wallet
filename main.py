@@ -10,7 +10,7 @@ print(f'{Fore.GREEN}Starting Chess-Wallet..{Style.RESET_ALL}')
 print(' ')
 
 # Get a entropy of the user & get a sha256 of it 
-chessboard = input("Enter your chess board setup: ")
+chessboard = input(f'{Back.MAGENTA}Enter your chess board setup: {Style.RESET_ALL}')
 print(f'{Fore.YELLOW}Your setup:{Style.RESET_ALL}',chessboard)
 print(' ')
 private_key = sha256(chessboard)
@@ -2114,10 +2114,12 @@ print(*firstwords_list)
 
 ####### Store PrivateKey ########
 print(' ')
-var1 = input('Do you want to store your 24 words? (Y/N): ')
+var1 = input(f'{Back.MAGENTA}Do you want to store your 24 words? (Y/N): {Style.RESET_ALL}')
 if var1 == 'Y' or var1 == 'y':
     print(' ')
-    fp = open('Wallets/' + chessboard + '.txt', 'w')
+    var21 = input(f'{Back.MAGENTA}Give your wallet-file a name (letters & numbers only): {Style.RESET_ALL}')
+    print(' ')
+    fp = open('Wallets/' + var21 + '.txt', 'w')
     fp.write('Chess-Wallet - Bitcoin Wallet Backup \n \n \n')
     fp.write('Your chessboard setup/ your entropy was: \n \n' + chessboard + '\n \n \n')
     fp.write('Your nnemonic words are: \n \n')
