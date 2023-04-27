@@ -3,32 +3,31 @@ Chess-Wallet - Bitcoin Wallet Backup
  
 Your chessboard setup/ your entropy was: 
  
-Example Wallet
- 
+8.bR,bN,bB,bQ,bK,bB,bN,bR,7.bP,bP,bP,bP,bP,bP,bP,bP,6.E,E,E,E,E,E,E,E,5.E,E,E,E,E,E,E,E,4.E,E,E,E,E,E,E,E,3.E,E,E,E,E,E,E,E,2.wP,wP,wP,wP,wP,wP,wP,wP,1.wR,wN,wB,wQ,wK,wB,wN,wR 
  
 Your nnemonic words are: 
  
-maple
-afraid
-forget
-dizzy
-catch
-caught
-have
-ordinary
-curious
-arena
-river
-now
-seek
-now
-lecture
-april
-stereo
-exotic
-spawn
-swap
-about
-despair
-option
-hurry
+price
+crystal
+motor
+amazing
+subway
+leader
+involve
+crumble
+typical
+apple
+jelly
+captain
+decrease
+gentle
+fan
+rose
+thrive
+add
+exclude
+adjust
+divide
+similar
+loud
+harvest
