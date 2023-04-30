@@ -2111,8 +2111,7 @@ for i in range(len(decimal_list)):
 print(f'{Fore.GREEN}Your 24 words: {Style.RESET_ALL}')
 print(*firstwords_list)
 
-
-####### Store PrivateKey ########
+# Store PrivateKey
 print(' ')
 var1 = input(f'{Back.MAGENTA}Do you want to store your 24 words? (Y/N): {Style.RESET_ALL}')
 if var1 == 'Y' or var1 == 'y':
