@@ -1,4 +1,5 @@
-from bitcoin import *
+import bitcoin
+from hashlib import sha256
 import binascii
 from colorama import Fore, Back, Style
 from colorama import just_fix_windows_console
@@ -13,7 +14,7 @@ print(' ')
 chessboard = input(f'{Back.MAGENTA}Enter your chess board setup: {Style.RESET_ALL}')
 print(f'{Fore.YELLOW}Your setup:{Style.RESET_ALL}',chessboard)
 print(' ')
-private_key = sha256(chessboard)
+private_key = bitcoin.sha256(chessboard)
 print(f'{Fore.LIGHTCYAN_EX}Generated private key (in hex):{Style.RESET_ALL}',private_key)
 
 # Turn the private-key into binary format
@@ -26,7 +27,6 @@ print(f'{Fore.LIGHTCYAN_EX}Binary seed: {Style.RESET_ALL}'+binaryseed)
 print(' ')
 
 # Get checksum of the binary to be able to get the 24th word
-from hashlib import sha256
 hexstr = "{0:0>4X}".format(int(binaryseed,2)).zfill(int(len(binaryseed)/4))
 data = binascii.a2b_hex(hexstr)
 addedcheck = sha256(data).hexdigest()
