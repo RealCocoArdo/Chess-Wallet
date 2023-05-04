@@ -1,5 +1,7 @@
 # This repo is archived.
-See the [Chess Wallet App](https://github.com/RealCocoArdo/Chess-Wallet-App).
+See the [Chess Wallet App](https://github.com/RealCocoArdo/Chess-Wallet-App). <br>
+This repo can still be used, however has only a commandline interface.
+<br><br><br>
 
 
 # Chess Wallet
