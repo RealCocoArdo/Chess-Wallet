@@ -1,3 +1,7 @@
+# This repo is archived.
+See the [Chess Wallet App](https://github.com/RealCocoArdo/Chess-Wallet-App).
+
+
 # Chess Wallet
 
 <p align="center"><img src="pictures/Banner.PNG"></img><br><a href="https://opensource.org/licenses/MIT" title="License: MIT"><img src="https://img.shields.io/badge/License-MIT-blue.svg"></img></a></p>
